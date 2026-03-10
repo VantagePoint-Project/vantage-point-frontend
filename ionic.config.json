@@ -1,0 +1,7 @@
+{
+  "name": "vantage-point-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
