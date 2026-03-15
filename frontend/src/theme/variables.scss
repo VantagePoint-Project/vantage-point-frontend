@@ -1,2 +1,9 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+:root {
+  /** Vantage Point Custom Palette **/
+  --primary-olive: #56633D;
+  --panel-cream: #F4F1E1;
+  --text-black: #000000;
+  --input-white: #FFFFFF;
+
+  /* ... resto de variables de Ionic ... */
+}

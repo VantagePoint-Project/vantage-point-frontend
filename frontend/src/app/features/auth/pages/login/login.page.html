@@ -1,0 +1,47 @@
+<ion-content class="ion-padding" style="--background: var(--input-white);">
+  <div class="main-container">
+    <div class="panel-crema padding-xl shadow-subtle border-radius-lg">
+      <h1 class="ion-text-center brand-name olive-text">VANTAGE POINT</h1>
+      
+      <div class="auth-section">
+        <h2 class="auth-title ion-text-center black-text">{{ 'AUTH.LOGIN.TITLE' | translate }}</h2>
+        
+        <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+          <ion-item lines="full" class="ion-margin-bottom input-white">
+            <ion-input label="{{ 'AUTH.LOGIN.EMAIL' | translate }}" labelPlacement="floating" type="email" name="email" [(ngModel)]="email" required></ion-input>
+          </ion-item>
+          
+          <ion-item lines="full" class="input-white">
+            <ion-input label="{{ 'AUTH.LOGIN.PASSWORD' | translate }}" labelPlacement="floating" type="password" name="password" [(ngModel)]="password" required></ion-input>
+            <ion-icon name="eye-outline" slot="end" class="olive-text"></ion-icon>
+          </ion-item>
+          
+          <ion-button expand="block" type="submit" class="ion-margin-top olive-button">
+            {{ 'AUTH.LOGIN.SUBMIT' | translate }}
+          </ion-button>
+        </form>
+        
+        <p class="ion-text-center olive-text font-sm">{{ 'AUTH.LOGIN.FORGOT_PASSWORD' | translate }}</p>
+      </div>
+      
+      <div class="register-section">
+        <h3 class="auth-subtitle ion-text-center black-text">{{ 'AUTH.LOGIN.NEW_USER' | translate }}</h3>
+        <p class="ion-text-center font-sm">
+          <a routerLink="/register" class="olive-text font-bold">{{ 'AUTH.LOGIN.REGISTER_FREE' | translate }}</a>
+        </p>
+        
+        <div class="social-login-container ion-margin-top">
+          <div class="social-panel google-panel shadow-subtle flex-center padding-sm border-radius-lg">
+            <ion-icon name="logo-google" class="google-text"></ion-icon>
+            <span class="font-sm black-text">{{ 'AUTH.LOGIN.CONTINUE_GOOGLE' | translate }}</span>
+          </div>
+          
+          <div class="social-panel apple-panel shadow-subtle flex-center padding-sm border-radius-lg">
+            <ion-icon name="logo-apple" class="black-text"></ion-icon>
+            <span class="font-sm black-text">{{ 'AUTH.LOGIN.CONTINUE_APPLE' | translate }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

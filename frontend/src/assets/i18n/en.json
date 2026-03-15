@@ -1,0 +1,25 @@
+{
+  "APP": {
+    "SLOGAN": "Your intelligent point of view"
+  },
+  "AUTH": {
+    "WELCOME": {
+      "GET_STARTED": "Get Started"
+    },
+    "LOGIN": {
+      "TITLE": "Sign In",
+      "EMAIL": "Email Address",
+      "PASSWORD": "Password",
+      "SUBMIT": "Sign In",
+      "FORGOT_PASSWORD": "Forgot your password?"
+    },
+    "REGISTER": {
+      "TITLE": "New User Registration",
+      "USERNAME": "Username",
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "SUBMIT": "Create Account",
+      "ALREADY_HAVE_ACCOUNT": "Already have an account? Sign In"
+    }
+  }
+}

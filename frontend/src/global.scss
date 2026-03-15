@@ -35,3 +35,38 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+/* Estilos inspirados en el diseño de Vantage Point */
+.panel-crema {
+  background-color: var(--panel-cream);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.olive-button {
+  --background: var(--primary-olive);
+  --color: white;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.olive-text {
+  color: var(--primary-olive);
+}
+
+.input-white {
+  --background: var(--input-white);
+  --border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.shadow-subtle {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
