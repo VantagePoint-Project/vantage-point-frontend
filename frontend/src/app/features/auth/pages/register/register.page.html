@@ -1,0 +1,51 @@
+<ion-content class="ion-padding" style="--background: var(--input-white);">
+  <div class="main-container">
+    <div class="panel-crema padding-xl shadow-subtle border-radius-lg">
+      <h1 class="ion-text-center brand-name olive-text">VANTAGE POINT</h1>
+      
+      <div class="auth-section">
+        <h2 class="auth-title ion-text-center black-text">{{ 'AUTH.REGISTER.TITLE' | translate }}</h2>
+        
+        <form #registerForm="ngForm" (ngSubmit)="onRegister()">
+          <ion-item lines="full" class="ion-margin-bottom input-white">
+            <ion-icon name="person-outline" slot="start" class="olive-text"></ion-icon>
+            <ion-input label="{{ 'AUTH.REGISTER.USERNAME' | translate }}" labelPlacement="floating" type="text" name="username" [(ngModel)]="username" required></ion-input>
+          </ion-item>
+          
+          <ion-item lines="full" class="ion-margin-bottom input-white">
+            <ion-icon name="mail-outline" slot="start" class="olive-text"></ion-icon>
+            <ion-input label="{{ 'AUTH.REGISTER.EMAIL' | translate }}" labelPlacement="floating" type="email" name="email" [(ngModel)]="email" required></ion-input>
+          </ion-item>
+          
+          <ion-item lines="full" class="ion-margin-bottom input-white">
+            <ion-icon name="lock-closed-outline" slot="start" class="olive-text"></ion-icon>
+            <ion-input label="{{ 'AUTH.REGISTER.PASSWORD' | translate }}" labelPlacement="floating" type="password" name="password" [(ngModel)]="password" required></ion-input>
+            <ion-icon name="eye-outline" slot="end" class="olive-text"></ion-icon>
+          </ion-item>
+          <p class="font-xs font-light">{{ 'AUTH.REGISTER.PASSWORD_HINT' | translate }}</p>
+          
+          <ion-button expand="block" type="submit" class="ion-margin-top olive-button">
+            {{ 'AUTH.REGISTER.SUBMIT' | translate }}
+          </ion-button>
+        </form>
+      </div>
+      
+      <div class="social-login-container ion-margin-top ion-text-center">
+        <p class="font-sm black-text">{{ 'AUTH.REGISTER.OR_REGISTER_WITH' | translate }}</p>
+        <div class="social-icons-container flex-center gap-md">
+          <div class="social-panel google-panel shadow-subtle flex-center padding-sm border-radius-lg">
+            <ion-icon name="logo-google" class="google-text"></ion-icon>
+            <span class="font-sm black-text">{{ 'AUTH.REGISTER.CONTINUE_GOOGLE' | translate }}</span>
+          </div>
+          
+          <div class="social-panel apple-panel shadow-subtle flex-center padding-sm border-radius-lg">
+            <ion-icon name="logo-apple" class="black-text"></ion-icon>
+            <span class="font-sm black-text">{{ 'AUTH.REGISTER.CONTINUE_APPLE' | translate }}</span>
+          </div>
+        </div>
+      </div>
+      
+      <p class="ion-text-center olive-text font-sm">{{ 'AUTH.REGISTER.ALREADY_HAVE_ACCOUNT' | translate }} <a routerLink="/auth/login" class="olive-text font-bold">{{ 'AUTH.LOGIN.TITLE' | translate }}</a></p>
+    </div>
+  </div>
+</ion-content>

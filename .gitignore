@@ -1,0 +1,38 @@
+# --- Vantage Point - Root Gitignore ---
+
+# Dependencias (Cualquier nivel)
+node_modules/
+frontend/node_modules/
+.angular/
+frontend/.angular/
+
+# Ionic / Angular salidas
+www/
+dist/
+.ionic/
+/platforms/
+/plugins/
+frontend/www/
+frontend/dist/
+
+# Logs y temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.tmp/
+tmp/
+
+# IDEs y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+.history/
+.project
+.settings/
+.classpath
+
+# Sistema
+.DS_Store
+Thumbs.db

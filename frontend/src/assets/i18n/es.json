@@ -1,0 +1,25 @@
+{
+  "APP": {
+    "SLOGAN": "Tu punto de vista inteligente"
+  },
+  "AUTH": {
+    "WELCOME": {
+      "GET_STARTED": "Empezar"
+    },
+    "LOGIN": {
+      "TITLE": "Inicio de Sesión",
+      "EMAIL": "Correo Electrónico",
+      "PASSWORD": "Contraseña",
+      "SUBMIT": "Iniciar Sesión",
+      "FORGOT_PASSWORD": "¿Olvidaste tu contraseña?"
+    },
+    "REGISTER": {
+      "TITLE": "Registro de Nuevo Usuario",
+      "USERNAME": "Usuario",
+      "EMAIL": "Correo",
+      "PASSWORD": "Contraseña",
+      "SUBMIT": "Crear Cuenta",
+      "ALREADY_HAVE_ACCOUNT": "¿Ya tienes cuenta? Inicio Sesión"
+    }
+  }
+}
